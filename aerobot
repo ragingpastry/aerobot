@@ -8,7 +8,7 @@ function main{
 }
 
 function check-root{
-if [[ ! "$(id -u)" -eq 0 ]]; then
+if [[ ! $(id -u) -eq 0 ]]; then
     echo 'Aerobot must be run as root.'
     exit 1
 fi
